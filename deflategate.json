@@ -1,0 +1,28 @@
+{
+  "red": [
+    "Fluffy Kau Body",
+    "Water Mote",
+    "Rattle Hissi Markings",
+    "Rattle Hissi Tongue",
+    "Brass Gear Goggles",
+    "Fluffy Kau Tail",
+    "Fluffy Kau Head",
+    "Bruce Holiday Sweater"
+  ],
+  "yellow": [
+    "Metallic Draik Body",
+    "Rattle Hissi Teeth",
+    "Bomber Jacket Shrug",
+    "Rattle Hissi Tail",
+    "Metallic Draik Wings",
+    "Metallic Draik Body",
+    "Metallic Draik Head",
+    "Metallic Draik Tail"
+  ],
+  "green": [
+    "Elegant Punk Guitar",
+    "Museum Grarrl Tail",
+    "Museum Grarrl Pedestal"
+    // Add more items as needed
+  ]
+}
