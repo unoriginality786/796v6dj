@@ -1390,11 +1390,6 @@
         "Luxury Chocolate Easter Negg",
         "Spotted Easter Negg",
         "Pretty Pink Easter Negg"
-    ],
-    "purple": [
-        "One Dubloon Coin",
-        "Two Dubloon Coin",
-        "Five Dubloon Coin",
         "Ten Dubloon Coin",
         "Fifty Dubloon Coin",
         "One Hundred Dubloon Coin",
@@ -1402,6 +1397,11 @@
         "Five Hundred Dubloon Coin",
         "Two Hundred Dubloon Coin",
         "One Thousand Dubloon Coin",
+    ],
+    "purple": [
+        "One Dubloon Coin",
+        "Two Dubloon Coin",
+        "Five Dubloon Coin",
         "Bubbling Fungus",
         "Bri Codestone",
         "Main Codestone",
