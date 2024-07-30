@@ -1,0 +1,48 @@
+{
+    "red": [
+        "Altadorian Sun Cheese",
+        "Calamari Pita Wrap",
+        "Cheesy Potato Tower",
+        "Fig Ice Cream",
+        "Lemon Sun Cake",
+        "Moussaka",
+        "Olive and Feta Pie",
+        "Vaeolus Iced Cookie",
+        "Vanilla Orange Biscuits"
+
+    ],
+    "yellow": [
+
+        "Altador Buns",
+        "Altador Cheeseburger",
+        "Altador Style Bratwurst",
+        "Altador Omelette",
+        "Altadorian Grapes",
+        "Altadorian Nectar",
+        "Altadorian Olive Salad",
+        "Aubergine and Olive Skewer",
+        "Baked Quince",
+        "Bowl of Pita Chips",
+        "Cheese Stuffed Olives",
+        "Coconut Dates",
+        "Fig Muffin",
+        "Fig Sandwich",
+        "Figs With Honey Sauce",
+        "Fried Fish",
+        "Melted Sugar Vaeolus",
+        "Pomegranate Jelly",
+        "Spicy Hummus",
+        "Stuffed Figs",
+        "Stuffed Grape Leaves",
+        "Sundried Tomato Hummus",
+        "Three Layer Hummus",
+        "Walnut Pomegranate Pastry",
+        "Whole Wheat Sun Pancakes",
+        "Yooyu Bread Basket"
+    ],
+    "green": [
+
+        "Altadorian Pastitsio"
+
+    ]
+}
