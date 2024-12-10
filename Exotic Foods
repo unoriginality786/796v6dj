@@ -1,4 +1,9 @@
 {
+    "red:[
+        "Poogle Pandan",
+        "Kau Kung Pao",
+        "Techo Tostadas"
+    ],
     "yellow": [
         "Almond Pudding",
         "Asparagus Toast Dumplings",
@@ -38,6 +43,7 @@
         "Aisha Spring Roll",
         "Aisha Winter Roll",
         "Curried Fish",
+        "Koi Taiyaki Ice Cream",
         "Exquisite Crunchy Wrap",
         "Gold Leaf Creambowl",
         "Hot and Sour Soup",
@@ -60,6 +66,7 @@
         "Spinach and Cream Cheese Dumplings",
         "Steamed Fish",
         "Traditional Mochi",
+        "Uni Udon",
         "Vegetable Tempura",
         "Xrepefruit"
     ],
