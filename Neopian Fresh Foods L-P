@@ -1,1 +1,53 @@
-
+{
+	"grey": [
+		"GREY"
+	],
+	"red": [
+		"RED"
+	],
+	"yellow": [
+		"YELLOW"
+	],
+	"green": [
+		"Land Lubber",
+		"Lawyerbot Degreaser",
+		"Le Sausage",
+		"Leftover Shortcrust Pastry",
+		"Lemon Pop",
+		"Lenny Salad",
+		"Loretta Fontaines Perfect Pizza",
+		"Man O War",
+		"Maple Syrup Negg",
+		"Meerca Apertif",
+		"Mega Manoroot Sandwich",
+		"Mega Pipper Sandwich",
+		"Mega Sandwich",
+		"Mega Tuna Sandwich",
+		"Mocha Joy Fun Pop",
+		"Mutated Negg",
+		"Mynci Surprise Ice Cream",
+		"Olivetato",
+		"Onion and Mustard Pie",
+		"Orange Negg",
+		"Ornate Purple Negg",
+		"Our Famous Krawk Pie",
+		"Partitioned Negg",
+		"Peach Jelly",
+		"Peanut Dash Stir Fry",
+		"Peppered Salmon Dish",
+		"Petpet Crackers",
+		"Pinanna Paradise",
+		"Pink Negg",
+		"Pirate Negg",
+		"Pizza Sandwich",
+		"Plum",
+		"Polka Carrot",
+		"Pretty Purple Princess Negg",
+		"Puntec Cupcake",
+		"Puntec Parcel",
+		"Purple Cybunny Negg",
+		"Purple Picnic Hamper",
+		"Purple Potato Aperitif",
+		"Puzzle Fruit"
+	]
+}
