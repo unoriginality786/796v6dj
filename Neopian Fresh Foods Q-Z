@@ -1,6 +1,10 @@
 {
 	"grey": [
-		"Tuskaninny Veggieloaf",
+		"Quadruple Fudge Cheese Wedge",
+		"Quiggle Fly Pie",
+		"Quiggle Foot Wrap",
+		"Quiggle Grilled Cheese Sandwich",
+		"Quiggle Pasta Salad",
 		"Radish",
 		"Rainbow Burger with Cheese",
 		"Raspberry Achyfi",
@@ -121,6 +125,7 @@
 		"Tuna Sub",
 		"Turkey Croquettes",
 		"Turkey Pie",
+		"Tuskaninny Veggieloaf",
 		"Two Bottles of Water",
 		"Uni Sushi",
 		"Vanilla Elephante Sundae",
@@ -141,7 +146,7 @@
 		"Zesty Zafara Burrito"
 	],
 	"red": [
-		"Ultimate Burger",
+		"Quiggle Stew",
 		"Rainbow Artichoke",
 		"Rainbow Poogle Lolly",
 		"Raspberry Cranberry Juice",
@@ -196,6 +201,7 @@
 		"Turkey and Chestnut Dressing",
 		"Turkey Salad",
 		"Turkey Steak Dinner",
+		"Ultimate Burger",
 		"Vanilla Waffle Cone",
 		"Veggie Poogle Wrap",
 		"Water Burger",
@@ -209,7 +215,7 @@
 		"Zafara Orange Juice"
 	],
 	"yellow": [
-		"Twirly Fruit Cream Cheese Dip",
+		"Quadruple Scoop of Sorbet",
 		"Rainbow Toast with Rainbow Jam",
 		"Rambus Salad Sandwich",
 		"Rangamelon",
@@ -321,6 +327,7 @@
 		"Turkey Leg Pasta",
 		"Turnip Eyrie Souffle",
 		"Turkey Wing Dinner",
+		"Twirly Fruit Cream Cheese Dip",
 		"Twirly Fruit Flavoured Milk",
 		"Twirly Fruit Juice",
 		"Two Garlic Bulbs",
@@ -360,7 +367,6 @@
 		"Zafara Veggie Stew"
 	],
 	"green": [
-		"Twin Salad",
 		"Rainbow Apple",
 		"Rainbow Carrot",
 		"Rainbow Cybunny Negg",
@@ -413,6 +419,7 @@
 		"Tonu Orange Juice",
 		"Turkey Drumstick Dinner",
 		"Tuskaninny Ice Cream",
+		"Twin Salad",
 		"Twirly Fruit Shoyru Ice Cream",
 		"Twirly Fruit Toasty",
 		"Ultimate Icy Negg",
