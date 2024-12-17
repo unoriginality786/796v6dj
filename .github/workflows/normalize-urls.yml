@@ -21,9 +21,6 @@ jobs:
       with:
         node-version: '16'  # You can specify your desired Node.js version here
 
-    - name: Install dependencies
-      run: npm install  # Make sure your repository has package.json for this, if any dependencies exist.
-
     - name: Run normalize URLs script
       run: |
         node .github/scripts/normalize-urls.js  # Run the Node.js script that normalizes URLs
