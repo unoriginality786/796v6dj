@@ -1,6 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
+// Path to the directory where the JSON files are located
+const jsonFilesDir = path.join(__dirname, '../../json_files');
+
 // Function to fix missing quotes around values that are strings
 function fixMissingQuotes(jsonStr) {
   // Regex to add quotes around unquoted string values (excluding numbers, booleans, null, etc.)
@@ -15,21 +18,17 @@ function fixMissingQuotes(jsonStr) {
   return jsonStr;
 }
 
-// Define the directory where JSON files are stored
-const jsonDir = path.join(__dirname, '..', '..', 'json_files'); // Correct the path to point to the root 'json_files' folder
-
-// Read the files in the json_files directory
-fs.readdir(jsonDir, (err, files) => {
+// Read and process all JSON files in the json_files directory
+fs.readdir(jsonFilesDir, (err, files) => {
   if (err) {
     console.error('Error reading directory:', err);
     return;
   }
 
-  // Process each file in the directory
-  files.forEach((file) => {
+  files.forEach(file => {
     if (file.endsWith('.json')) {
-      const filePath = path.join(jsonDir, file);
-
+      const filePath = path.join(jsonFilesDir, file);
+      
       // Read the JSON file
       fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
@@ -37,7 +36,7 @@ fs.readdir(jsonDir, (err, files) => {
           return;
         }
 
-        // Fix missing quotes in the JSON data
+        // Fix missing quotes
         const fixedData = fixMissingQuotes(data);
 
         // Save the fixed JSON back to the file
