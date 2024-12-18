@@ -1,0 +1,48 @@
+name: Fix JSON Formatting and Prettify
+
+on:
+  push:
+    paths:
+      - 'json_files/**/*.json'  # Trigger only when JSON files are changed
+  pull_request:
+    paths:
+      - 'json_files/**/*.json'  # Trigger when JSON files are changed in PRs
+
+jobs:
+  fix-json:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js (make sure to specify the version you need)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # or the version you need
+
+      # Step 3: Install dependencies (for Prettier and any other packages you need)
+      - name: Install dependencies
+        run: |
+          npm install
+          npm install --save-dev prettier  # Install Prettier if it's not installed globally
+
+      # Step 4: Run the fix-json.js script to fix missing quotes and syntax errors
+      - name: Run the fix-json script
+        run: node .github/scripts/fix-json.js
+
+      # Step 5: Run Prettier to format the JSON files
+      - name: Run Prettier
+        run: npx prettier --write "json_files/**/*.json"  # Format the JSON files
+
+      # Step 6: Commit and push any changes
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "github-actions@github.com"
+          git add .
+          git commit -m "Fix JSON formatting and run Prettier"
+          git push
+        # Continue even if there are no changes to avoid workflow failure
+        continue-on-error: true
