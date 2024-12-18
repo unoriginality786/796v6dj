@@ -22,21 +22,15 @@ jobs:
         with:
           node-version: '16'  # or the version you need
 
-      # Step 3: Install dependencies (for Prettier and any other packages you need)
-      - name: Install dependencies
-        run: |
-          npm install
-          npm install --save-dev prettier  # Install Prettier if it's not installed globally
-
-      # Step 4: Run the fix-json.js script to fix missing quotes and syntax errors
+      # Step 3: Run the fix-json.js script to fix missing quotes and syntax errors
       - name: Run the fix-json script
         run: node .github/scripts/fix-json.js
 
-      # Step 5: Run Prettier to format the JSON files
+      # Step 4: Run Prettier using npx to format the JSON files
       - name: Run Prettier
         run: npx prettier --write "json_files/**/*.json"  # Format the JSON files
 
-      # Step 6: Commit and push any changes
+      # Step 5: Commit and push any changes
       - name: Commit and push changes
         run: |
           git config --local user.name "github-actions"
