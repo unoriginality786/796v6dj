@@ -16,7 +16,7 @@ function fixMissingQuotes(jsonStr) {
 }
 
 // Define the directory where JSON files are stored
-const jsonDir = path.join(__dirname, '..', 'json_files');
+const jsonDir = path.join(__dirname, '..', '..', 'json_files'); // Adjust path to point to the root 'json_files' folder
 
 // Read the files in the json_files directory
 fs.readdir(jsonDir, (err, files) => {
