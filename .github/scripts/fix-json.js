@@ -15,32 +15,40 @@ function fixMissingQuotes(jsonStr) {
   return jsonStr;
 }
 
-// Path to the directory containing the JSON files
-const jsonFilesDir = path.join(__dirname, 'json_files');
+// Define the directory where JSON files are stored
+const jsonDir = path.join(__dirname, '..', 'json_files');
 
-// Read all files in the directory
-fs.readdirSync(jsonFilesDir).forEach(file => {
-  const filePath = path.join(jsonFilesDir, file);
-
-  // Process only JSON files
-  if (file.endsWith('.json')) {
-    fs.readFile(filePath, 'utf8', (err, data) => {
-      if (err) {
-        console.error('Error reading file:', err);
-        return;
-      }
-
-      // Fix missing quotes
-      const fixedData = fixMissingQuotes(data);
-
-      // Save the fixed JSON back to the file
-      fs.writeFile(filePath, fixedData, (err) => {
-        if (err) {
-          console.error('Error writing file:', err);
-        } else {
-          console.log(`Fixed file: ${filePath}`);
-        }
-      });
-    });
+// Read the files in the json_files directory
+fs.readdir(jsonDir, (err, files) => {
+  if (err) {
+    console.error('Error reading directory:', err);
+    return;
   }
+
+  // Process each file in the directory
+  files.forEach((file) => {
+    if (file.endsWith('.json')) {
+      const filePath = path.join(jsonDir, file);
+
+      // Read the JSON file
+      fs.readFile(filePath, 'utf8', (err, data) => {
+        if (err) {
+          console.error('Error reading file:', err);
+          return;
+        }
+
+        // Fix missing quotes in the JSON data
+        const fixedData = fixMissingQuotes(data);
+
+        // Save the fixed JSON back to the file
+        fs.writeFile(filePath, fixedData, (err) => {
+          if (err) {
+            console.error('Error writing file:', err);
+          } else {
+            console.log(`File fixed and saved: ${filePath}`);
+          }
+        });
+      });
+    }
+  });
 });
