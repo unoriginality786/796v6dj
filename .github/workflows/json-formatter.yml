@@ -25,32 +25,32 @@ jobs:
       run: |
         npm install --global prettier
 
-    # Add this step to list all files in the repo and check for .json files
+    # List all files in the repository to check the structure
     - name: List repository files
       run: |
         echo "Listing all files in the repository:"
-        ls -R  # List all files recursively to check the paths
+        ls -R  # List all files recursively
 
-    # Add this step to find .json files and print the list of them
+    # Find JSON files in the json_files/ directory
     - name: Find JSON files
       run: |
         echo "Finding JSON files..."
-        find . -name "*.json"  # This will show the files Prettier will process
+        find json_files/ -name "*.json"  # Look for JSON files in the json_files/ directory
 
-    # Prettier will format the JSON files
+    # Run Prettier on JSON files in json_files/ directory
     - name: Format JSON files
       run: |
         echo "Formatting JSON files..."
-        prettier --write "**/*.json"  # Format all JSON files
+        prettier --write "json_files/**/*.json"  # Format all JSON files in json_files/
         echo "Formatted files:"
         git diff  # Show what was changed by Prettier
 
-    # Check for uncommitted changes after formatting
+    # Check if formatting was successful
     - name: Check for formatting issues
       run: |
         git diff --exit-code
 
-    # Commit and push the changes if any files were modified
+    # Commit and push any changes if files were formatted
     - name: Commit and push changes
       run: |
         git config --global user.name "github-actions"
