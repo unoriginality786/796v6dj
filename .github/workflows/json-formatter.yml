@@ -1,0 +1,36 @@
+name: JSON Formatter
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  format-json:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install Prettier
+      run: |
+        npm install --global prettier
+
+    - name: Format JSON files
+      run: |
+        # Find all JSON files in the repository and format them using prettier
+        prettier --write "**/*.json"
+
+    - name: Check for formatting issues
+      run: |
+        # Check if there are any changes in the JSON files
+        git diff --exit-code
