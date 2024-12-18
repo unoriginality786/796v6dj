@@ -31,11 +31,12 @@ jobs:
         echo "Listing all files in the repository:"
         ls -R  # List all files recursively
 
-    # Find JSON files in the json_files/ directory
+    # Find JSON files and print them to verify they're detected
     - name: Find JSON files
       run: |
-        echo "Finding JSON files..."
+        echo "Finding JSON files in json_files directory..."
         find json_files/ -name "*.json"  # Look for JSON files in the json_files/ directory
+        echo "End of JSON files list."
 
     # Run Prettier on JSON files in json_files/ directory
     - name: Format JSON files
